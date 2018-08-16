@@ -1,0 +1,10 @@
+version: '3'
+
+serives:
+  asterisk:
+    build: ./docker-asterisk
+    ports:
+      - "4573:4573"
+
+  db:
+    image: mariadb
