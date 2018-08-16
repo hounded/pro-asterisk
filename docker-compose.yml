@@ -1,6 +1,6 @@
 version: '3'
 
-serives:
+services:
   asterisk:
     build: ./docker-asterisk
     ports:
@@ -8,3 +8,5 @@ serives:
 
   db:
     image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: secert
