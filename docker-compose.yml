@@ -10,3 +10,5 @@ services:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: secert
+    ports:
+      - "3306:3306"
