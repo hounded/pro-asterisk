@@ -12,3 +12,5 @@ services:
       MYSQL_ROOT_PASSWORD: secert
     ports:
       - "3306:3306"
+    volumes:
+      - /usr/.data:/var/lib/mariadb/data
